@@ -7,7 +7,7 @@ import os
 os.environ['LANG'] = 'en_US.UTF-8'
 
 
-a=sql.connect(host='localhost',user='root',password='root',auth_plugin='mysql_native_password')
+a=sql.connect(host='localhost',user='root',password='root',auth_plugin='mysql_native_password') #use your mysql password
 b=a.cursor()
 b.execute('create database if not exists fastfood')
 b.execute("use fastfood")
